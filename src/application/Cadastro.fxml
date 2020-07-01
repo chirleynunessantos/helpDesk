@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="514.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControlaTela">
+   <children>
+      <Label layoutX="18.0" layoutY="56.0" text="Nome" />
+      <Label layoutX="17.0" layoutY="100.0" text="Telefone" />
+      <Label layoutX="13.0" layoutY="140.0" prefHeight="27.0" prefWidth="55.0" text="Email" />
+      <Label layoutX="6.0" layoutY="183.0" text="Ocorrencia" />
+      <TextField fx:id="nome" layoutX="68.0" layoutY="52.0" />
+      <TextField fx:id="telefone" layoutX="79.0" layoutY="96.0" />
+      <TextField fx:id="email" layoutX="68.0" layoutY="141.0" />
+      <TextArea fx:id="ocorrencia" layoutX="87.0" layoutY="183.0" prefHeight="90.0" prefWidth="384.0" />
+      <Button layoutX="228.0" layoutY="341.0" mnemonicParsing="false" onAction="#botaoSalvar" text="salvar" />
+   </children>
+</AnchorPane>
