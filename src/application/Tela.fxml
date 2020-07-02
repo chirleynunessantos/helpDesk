@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="336.0" prefWidth="447.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControlaTela">
+<AnchorPane prefHeight="467.0" prefWidth="447.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControlaTela">
    <children>
-      <Button layoutX="41.0" layoutY="130.0" mnemonicParsing="false" onAction="#acaoDoBotao" prefHeight="77.0" prefWidth="151.0" text="Novo Chamdo" />
-      <Text layoutX="116.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="                       Help Desk" wrappingWidth="177.13671875" />
+      <Button layoutX="26.0" layoutY="75.0" mnemonicParsing="false" onAction="#acaoDoBotao" prefHeight="77.0" prefWidth="151.0" text="Novo Chamdo" />
+      <Text layoutX="117.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="                       Help Desk" wrappingWidth="177.13671875" />
       <Label fx:id="labelOlaMundo" layoutX="287.0" layoutY="105.0" />
-      <Button layoutX="240.0" layoutY="130.0" mnemonicParsing="false" onAction="#acaoDoBuscar" prefHeight="77.0" prefWidth="158.0" text="buscar" />
-      <Button layoutX="38.0" layoutY="223.0" mnemonicParsing="false" onAction="#doExcluir" prefHeight="77.0" prefWidth="158.0" text="Excluir da fila" />
+      <Button layoutX="240.0" layoutY="75.0" mnemonicParsing="false" onAction="#read" prefHeight="77.0" prefWidth="158.0" text="Ler valores" />
+      <Button layoutX="26.0" layoutY="197.0" mnemonicParsing="false" onAction="#doExcluir" prefHeight="77.0" prefWidth="158.0" text="Excluir da fila" />
+      <Button layoutX="244.0" layoutY="197.0" mnemonicParsing="false" onAction="#chamaFiltro" prefHeight="77.0" prefWidth="151.0" text="Alterar dado" />
+      <Button layoutX="30.0" layoutY="297.0" mnemonicParsing="false" onAction="#chamaArray" prefHeight="68.0" prefWidth="151.0" text="bubleSort" />
+      <ButtonBar layoutX="206.0" layoutY="311.0" prefHeight="40.0" prefWidth="200.0">
+         <buttons>
+            <Button mnemonicParsing="false" onAction="#arrayparaQuik" prefHeight="68.0" prefWidth="151.0" text="Quick" />
+         </buttons>
+      </ButtonBar>
    </children>
 </AnchorPane>

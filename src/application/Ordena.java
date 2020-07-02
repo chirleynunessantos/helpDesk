@@ -1,14 +1,34 @@
 package application;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Arrays;
 
 public class Ordena {
 
-	public static void main(String[] args) {
-		
-		
+	public static void main(String[] args) throws IOException {
+		File f = new File("C:\\nome\\entrada.txt");
+
+		 FileReader arq = new FileReader(f);
+	     BufferedReader lerArq = new BufferedReader(arq); 
+	     BufferedReader ler2= new BufferedReader(arq); 
+
+	     String linha = lerArq.readLine(); // lê a primeira linha
+	     String valor = linha;
+	     
+	     
+	     while (linha != null) {
+	         
+	    
+	  			
+	  			
+	  		}
 	//	-----------------------------------
-		int[] st = {5,10,7,8,9};
+		int[] st = {1,2,3};
+		
 		
 		quickSort(st,0,st.length-1);
 		 
@@ -34,6 +54,9 @@ public class Ordena {
 			v[j]= aux;
 		}
 		
+		public static void teste() {
+			
+		}
 		
 		
 		public static void quickSort(int[] v, int esq, int dir) {
@@ -48,7 +71,7 @@ public class Ordena {
 			int j = dir;
 			int pivo = v [esq];
 			while(i <= j) {
-				if(v[i] <= pivo) i++;
+				if((v[i] <= pivo)  && j <= dir && i > j)i++;
 				else if(v[j]> pivo)j--;
 				else if (i<=j) {
 					trocar(v,i,j);
@@ -61,7 +84,6 @@ public class Ordena {
 			
 			return j;
 		}
-		
-		
+
 	}
 
