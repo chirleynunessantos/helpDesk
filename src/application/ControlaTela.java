@@ -245,7 +245,7 @@ private static int separar(String[] v, int esq, int dir) {
 	int j = dir;
 	String pivo = v [esq];
 	while(i <= j  ) {
-		if((v[i].compareTo(pivo) <= 0 && j <= dir && i > j))i++;
+		if((v[i].compareTo(pivo) <= 0))i++;
 		else if(v[j ].compareTo( pivo) >0)j--;
 		else if (i<=j) {
 			trocar(v,i-1,j);
